@@ -1,0 +1,7 @@
+{
+  "name": "lo-que-hizo-tache-en-su-tiempo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
