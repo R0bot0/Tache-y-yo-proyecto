@@ -1,0 +1,12 @@
+<ion-menu contentId="main-content" type="overlay">
+  <ion-content>
+    <ion-header>Simet</ion-header>
+    <ion-note>Opciones...</ion-note>
+    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+      <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+        <ion-icon aria-hidden="false" slot="start" [ios]="p.icon" [md]="p.icon" color="green"></ion-icon>
+        <ion-label>{{ p.title }}</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>

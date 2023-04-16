@@ -1,0 +1,65 @@
+
+.sbfiltro{
+  --icon-color: #c3e4bc;
+  --background:	#f4f4f4;
+  --border-radius: 50px;	
+  text-align: left;
+  --color: #8a8a8a;
+}
+.botondoc{
+  --background: #ffffff;
+  --background-hover: #9ce0be;
+  --background-activated: #9c9cff;
+  --background-focused: #88f4be;
+
+  --color: rgba(0, 0, 0, 0.454);
+  --color-activated: #ffffff;
+  --border-color: #ececff;
+  --border-style: solid;
+  --border-width: 1px;
+
+  --ripple-color: deeppink;
+
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.nopadding{
+  padding-bottom: 0px;
+}
+
+ion-button.semicircle {
+  --border-radius: 50px 50px 0 0;
+  width: 100px; 
+  height: 60px; 
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.right {
+  text-align: right;
+}
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

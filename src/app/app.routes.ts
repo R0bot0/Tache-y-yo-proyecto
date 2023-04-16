@@ -2,12 +2,17 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    path: '',
+    redirectTo: 'folder/Documentos de interes',
+    pathMatch: 'full',
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
+    path: 'folder/:id',
+    loadComponent: () =>
+      import('./folder/folder.page').then((m) => m.FolderPage),
+  },
+  {
+    path: 'Login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
 ];
