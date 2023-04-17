@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
 import { IonicModule } from '@ionic/angular';
 @Component({
   selector: 'app-root',
@@ -11,4 +10,5 @@ import { IonicModule } from '@ionic/angular';
 })
 export class AppComponent {
   constructor() {}
+
 }

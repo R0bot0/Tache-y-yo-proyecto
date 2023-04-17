@@ -2,6 +2,7 @@ import { Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -21,7 +22,11 @@ export class MenuComponent  implements OnInit {
     { title: 'Contacto', url: '/folder/Contacto', icon: 'people-circle' },
   ];
 
-  constructor() { }
+  constructor(public menuCtrl: MenuController) { }
+
+  hidemenu(){
+    this.menuCtrl.toggle('menusimet')
+  }
 
   ngOnInit() {}
 
