@@ -1,16 +1,23 @@
+.body {
+  --background: #a5ef8d;
+  --padding-top: 5%;
+}
 
-.body{
-    --background: #a5ef8d;
-    --padding-top: 15%;;
-  }
-  
-  .binicio{
-    width: 50%;
-  }
-  
-  .container {
-    padding-top: 2rem;
-  }
-  .button {
-    --background: rgb(133, 79, 235);
-  }
+.binicio {
+  width: 50%;
+}
+
+.container {
+  padding-top: 2rem;
+}
+.button {
+  --background: rgb(133, 79, 235);
+}
+
+.signup{
+  font-size: medium;
+}
+
+.ion-label{
+  background-color: none;
+}

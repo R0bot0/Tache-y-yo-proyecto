@@ -1,3 +1,51 @@
+.wholepage{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.ion-col-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ion-col-header-menu{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.ion-col-header-logout{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.imagenlogo{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.ion-grid-bton{
+  padding: 0;
+}
+.page{
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #a5ef8d;
+}
+
+.a{
+  color: white;
+}
+.headerpagina{
+  --border-width: 0 !important;
+  --background: #9c9cff;
+}
 
 .sbfiltro{
   --icon-color: #c3e4bc;
@@ -30,7 +78,10 @@
   white-space: normal;
 }
 .nopadding{
-  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
 }
 
 ion-button.semicircle {

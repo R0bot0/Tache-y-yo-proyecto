@@ -20,6 +20,7 @@ export class MenuComponent  implements OnInit {
     { title: 'Mapa de emergencias', url: '/folder/Mapa de emergencias', icon: 'alert-circle' },
     { title: 'Gestión de recursos', url: '/folder/Gestión de recursos', icon: 'cube' },
     { title: 'Contacto', url: '/folder/Contacto', icon: 'people-circle' },
+    { title: 'Cerrar sesión', url: '/login', icon: 'people' },
   ];
 
   constructor(public menuCtrl: MenuController) { }

@@ -1,27 +1,26 @@
-ion-menu-button {
-    color: var(--ion-color-primary);
-  }
-  
-ion-menu ion-content {
-    --background: var(rgb(8, 197, 8), var(purple, #fff));
-  }
-  
-  ion-menu{
-    align-items: center;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-  }
-  ion-menu-button{
-    color: rgba(59, 252, 0, 0.589);;
-  }
-  
-  ion-note {
-    display: inline-block;
-    font-size: 16px;
-  
-    color: #ffffff;
-  }
-  
-  ion-item.selected {
-    --color: rgb(88, 255, 88);
-  }
+.options {
+  --background: rgba(255, 255, 255, 0);
+  color: #7070f5;
+}
+
+.options ion-item.selected {
+  color: rgb(88, 255, 241);
+}
+
+ion-note {
+  display: inline-block;
+  font-size: small;
+  color: #e9e9e9;
+}
+
+ion-content{
+  --background: #a5ef8d;
+}
+
+.abc{
+  --background: #ffffff !important;
+}
+
+.toolmenu{
+  --background: #9c9cff;
+}
