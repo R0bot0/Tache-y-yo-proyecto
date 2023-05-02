@@ -15,23 +15,24 @@
           </div>
         </ion-col>
       </ion-row>
+      <form [formGroup]="formularioLogin"></form>
       <ion-row>
         <ion-col>
           <ion-item class="logininput">
-            <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" placeholder="Usuario o Correo electronico"></ion-input>
+            <ion-input class="logininput2" label="Usuario o Correo electronico" label-placement="floating" type="email" placeholder="Usuario o Correo electronico"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-item class="logininput">
-            <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" placeholder="Contraseña"></ion-input>
+            <ion-input class="logininput2" height="50%" label="Contraseña" label-placement="floating" type="password" placeholder="Contraseña"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" class="button" routerLink="/folder/Documentos de interes">INGRESAR</ion-button>
+          <ion-button (click)="myFunction()" id="ingresar" expand="block" class="button" >INGRESAR</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -42,3 +43,8 @@
     </ion-grid>
   </ion-content>
 </div>
+<ion-footer class="footer">
+  <ion-toolbar>
+    <a class="soporte" routerLink="/restaurarcont">SOPORTE TECNICO </a>
+  </ion-toolbar>
+</ion-footer>

@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-restaurarcont',
-  templateUrl: './restaurarcont.page.html',
-  styleUrls: ['./restaurarcont.page.scss'],
+  selector: 'app-nuevacont',
+  templateUrl: './nuevacont.page.html',
+  styleUrls: ['./nuevacont.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class RestaurarcontPage implements OnInit {
+export class NuevacontPage implements OnInit {
 
   constructor() { }
 

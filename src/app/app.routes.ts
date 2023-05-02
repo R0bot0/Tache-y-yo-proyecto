@@ -16,8 +16,28 @@ export const routes: Routes = [
     loadChildren: () => import('./User/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'restaurarcont',
-    loadComponent: () => import('./User/restaurarcont/restaurarcont.page').then( m => m.RestaurarcontPage)
+    path: 'perfil',
+    loadComponent: () => import('./User/perfil/perfil.page').then( m => m.PerfilPage)
+  },
+  {
+    path: 'nuevacont',
+    loadComponent: () => import('./User/restaurarcont/nuevacont/nuevacont.page').then( m => m.NuevacontPage)
+  },
+  {
+    path: 'codigo',
+    loadComponent: () => import('./User/restaurarcont/codigo/codigo.page').then( m => m.CodigoPage)
+  },
+  {
+    path: 'metodos',
+    loadComponent: () => import('./User/restaurarcont/metodos/metodos.page').then( m => m.MetodosPage)
+  },
+  {
+    path: 'gmail',
+    loadComponent: () => import('./User/restaurarcont/gmail/gmail.page').then( m => m.GmailPage)
+  },
+  {
+    path: 'sms',
+    loadComponent: () => import('./User/restaurarcont/sms/sms.page').then( m => m.SmsPage)
   },
 
 ];

@@ -1,0 +1,51 @@
+.page{
+  overflow-y: scroll;
+  display: flex;
+
+  flex-direction: column;
+  height: 100%;
+  --background: #ffffff;
+}
+.headerpagina{
+  --border-width: 0 !important;
+  --background: #98ed94;
+}
+.a{
+  color: white;
+}
+.sbfiltro{
+  --icon-color: #c3e4bc;
+  --background:	#f4f4f4;
+  --border-radius: 50px;	
+  text-align: left;
+  --color: #8a8a8a;
+}
+.botonop {
+    --background: #0000ff00;
+    filter: sepia(300%) hue-rotate(180deg) saturate(100000%);
+    font-size: 2.5rem;
+}
+  
+.botonlerta{
+    --background: #5a5aff;
+    --shape: round;
+    margin-bottom: 0%;
+  }
+.icono{
+    --color:#FF0000 !important;
+}
+.textoboton{
+    color: #a6a6a6;
+    font-size: 8px;
+    height: 200%;
+    text-align: center;
+}
+.columna{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    height: auto !important;
+}
+.campanita{
+  font-size: 2.5rem;
+}

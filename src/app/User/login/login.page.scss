@@ -1,25 +1,38 @@
 .body {
   --background: #98ed94;
   justify-content: center;
- 
+  --ion-toolbar-background: #98ed94;
+  --border-width: 0;
+  --box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  text-align: center;
+}
+.footer{
+  --background: #98ed94;
+  justify-content: center;
+  --ion-toolbar-background: #98ed94;
+  --border-width: 0;
+  --box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
 }
 
 .binicio {
   width: 50%;
 }
 
-.container {
-  display: flex;
-  padding-top: 2rem;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-self: center;
-  height: 90%;
-}
-.button {
-  --background: #365494;
-}
+
 
 .signup{
   font-size: medium;
@@ -36,11 +49,17 @@
   --placeholder-color: #ddd;
   --placeholder-opacity: .8;
 
-  --padding-bottom: 10px;
-  --padding-end: 10px;
-  --padding-start: 10px;
-  --padding-top: 10px;
+  --padding-bottom: 0px;
+  --padding-end: 1rem;
+  --padding-start: 1.5rem;
+  --padding-top: 0px;
   --border-style: none;
+}
+
+.logininput2{
+  display: flex;
+  size: 10;
+  height: 50%;
 }
 
 
@@ -59,5 +78,15 @@
   display: flex !important;
     align-content: center;
     justify-content: center;
+}
+
+
+.soporte{
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  text-decoration: none !important;
+  color:#ffffff;
 }
 

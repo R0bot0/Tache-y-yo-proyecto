@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar class="headerpagina">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-col-header-menu">
+          <div>
+            <ion-buttons slot="start" >
+              <ion-menu-button class="a"></ion-menu-button>
+            </ion-buttons>
+          </div>
+        </ion-col>
+        <ion-col class="ion-col-header">
+          <div class="logo">
+            <a class="imagenlogo"  slot="middle">
+              <img class="logo" src="assets\favicon.ico" alt="logo" />
+            </a>
+          </div>
+        </ion-col>
+        <ion-col class="ion-col-header-logout">
+          <a href="">Log out</a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="page">
+  <ion-grid>
+    <ion-row class="columna">
+      <!-- Aqui va la imagen del usuario -->
+      
+    </ion-row>
+    <ion-row>
+      <!-- Aqui va su nombre -->
+      <ion-col class="columna">
+                             
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- Aqui va su posicion -->
+      <ion-col class="columna" >                    
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- Aqui va el boton de cambiar contraseña -->
+      <ion-col class="columna">
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- Boton de generar alerta -->
+      <ion-col class="columna">                                   
+        <ion-button class= "botonlerta"shape="round">
+          <div style="display: flex;
+          flex-direction: column;
+          align-items: center;">
+            <ion-icon class="campanita" src="assets\ICONOS - ACTUALIZADOS\BOTON ALERTA.svg" (click)="myFunction()"></ion-icon> 
+            <ion-label>Generar Alerta</ion-label>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-start ion-justify-content-center">
+      <!-- ayuda mutua -->   
+       <ion-col class="columna">    
+          <ion-icon  class= "botonop" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - AYUDA MUTUA.svg" (click)="myFunction()"></ion-icon> 
+
+          <ion-label class="textoboton">Ayuda mutua</ion-label>
+       </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-start ion-justify-content-center">
+      <!-- Documentos de interes --> 
+      <ion-col class="columna">    
+        <ion-icon  class= "botonop" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - DOC.svg" (click)="myFunction()"></ion-icon> 
+
+        <ion-label class="textoboton">Documentos<br>de interes</ion-label>
+    </ion-col>  
+      </ion-row>
+    <ion-row class="ion-align-items-start ion-justify-content-center">
+       <!-- Listado de sustancias -->  
+        <ion-col class="columna">    
+            <ion-icon  class= "botonop" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - SUSTANCIAS.svg" (click)="myFunction()"></ion-icon> 
+
+            <ion-label class="textoboton">listado de<br>sustancias</ion-label>
+        </ion-col>                       
+        </ion-row>
+    <ion-row>
+      <!-- Soporte tecnico --> 
+      <ion-col>
+                                                 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
