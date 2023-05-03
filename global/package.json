@@ -1,0 +1,11 @@
+{
+  "name": "@simet/global",
+  "version": "0.0.1",
+  "description": "All share files",
+  "author": "danielcatu <danielcatu@gmail.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
