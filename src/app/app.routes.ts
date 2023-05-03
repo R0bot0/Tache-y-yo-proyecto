@@ -12,6 +12,11 @@ export const routes: Routes = [
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
   {
+    path: 'folder',
+    loadComponent: () =>
+      import('./folder/folder.page').then((m) => m.FolderPage),
+  },
+  {
     path: 'login',
     loadChildren: () => import('./User/login/login.module').then( m => m.LoginPageModule)
   },

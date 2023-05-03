@@ -1,6 +1,6 @@
 
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;position: relative;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <ion-content class="body">
     <ion-grid class="container">
       <ion-row size="12">
@@ -18,20 +18,20 @@
       <ion-row>
         <ion-col>
           <ion-item class="logininput">
-            <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" placeholder="Usuario o Correo electronico"></ion-input>
+            <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" [(ngModel)]="id" placeholder="Usuario o Correo electronico"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-item class="logininput">
-            <ion-input label="Contraseña" label-placement="floating" type="password" placeholder="Contraseña"></ion-input>
+            <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" class="button" routerLink="/folder/Documentos de interes">INGRESAR</ion-button>
+          <ion-button expand="block" class="button" (click)="Login()">INGRESAR</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
