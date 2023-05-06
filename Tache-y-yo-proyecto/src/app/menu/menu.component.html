@@ -1,0 +1,14 @@
+<ion-menu contentId="the-page" type="overlay" menuId="menusimet">
+  <ion-content>
+    <ion-toolbar class="toolmenu">
+      <ion-header>Menú</ion-header>
+      <ion-note>Selecciona una opción: </ion-note>
+    </ion-toolbar>
+    <ion-menu-toggle  auto-hide="true" *ngFor="let p of appPages; let i = index">
+      <ion-item class="options" (click)="hidemenu()" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+        <ion-icon  slot="start" [ios]="p.icon" [md]="p.icon"></ion-icon>
+        <ion-label>{{ p.title }}</ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-content>
+</ion-menu>

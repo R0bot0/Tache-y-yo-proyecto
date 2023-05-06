@@ -1,0 +1,117 @@
+.wholepage{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.ion-col-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ion-col-header-menu{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.ion-col-header-logout{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.imagenlogo{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.ion-grid-bton{
+  padding: 0;
+}
+.page{
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.a{
+  color: white;
+}
+.headerpagina{
+  --border-width: 0 !important;
+  --background: #98ed94;
+}
+
+.sbfiltro{
+  --icon-color: #c3e4bc;
+  --background:	#f4f4f4;
+  --border-radius: 50px;	
+  text-align: left;
+  --color: #8a8a8a;
+}
+.botondoc{
+  --background: #ffffff;
+  --background-hover: #9ce0be;
+  --background-activated: #9c9cff;
+  --background-focused: #88f4be;
+
+  --color: rgba(0, 0, 0, 0.454);
+  --color-activated: #ffffff;
+  --border-color: #ececff;
+  --border-style: solid;
+  --border-width: 1px;
+
+  --ripple-color: rgb(188, 239, 219);
+  --border-radius: 50px 50px 50px 50px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.nopadding{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+  padding: 0;
+}
+
+ion-button.semicircle {
+  --border-radius: 50px 50px 0 0;
+  width: 100px; 
+  height: 60px; 
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.right {
+  text-align: right;
+}
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

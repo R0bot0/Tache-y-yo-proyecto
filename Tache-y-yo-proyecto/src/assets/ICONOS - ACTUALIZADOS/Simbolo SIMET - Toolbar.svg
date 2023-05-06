@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90.12 55.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #365494;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_8-2);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_6-2);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_6);
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_3);
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_8);
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_3" data-name="Degradado sin nombre 3" cx="-328.24" cy="1370.82" fx="-328.24" fy="1370.82" r="2.85" gradientTransform="translate(2345.22 1405.04) scale(5.83 -.99)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9cbcc"/>
+      <stop offset=".11" stop-color="#c9cbcc" stop-opacity=".84"/>
+      <stop offset=".35" stop-color="#c9cbcc" stop-opacity=".55"/>
+      <stop offset=".56" stop-color="#c9cbcc" stop-opacity=".31"/>
+      <stop offset=".75" stop-color="#c9cbcc" stop-opacity=".14"/>
+      <stop offset=".9" stop-color="#c9cbcc" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#c9cbcc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_6" data-name="Degradado sin nombre 6" cx="-328.29" cy="1246.28" fx="-328.29" fy="1246.28" r="1.36" gradientTransform="translate(2311.85 2394.35) scale(5.83 -2.08)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9cbcc" stop-opacity=".7"/>
+      <stop offset=".15" stop-color="#c9cbcc" stop-opacity=".51"/>
+      <stop offset=".32" stop-color="#c9cbcc" stop-opacity=".33"/>
+      <stop offset=".5" stop-color="#c9cbcc" stop-opacity=".19"/>
+      <stop offset=".67" stop-color="#c9cbcc" stop-opacity=".08"/>
+      <stop offset=".84" stop-color="#c9cbcc" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#c9cbcc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Degradado_sin_nombre_6-2" data-name="Degradado sin nombre 6" cx="-307.66" cy="1239.82" fx="-307.66" fy="1239.82" r="1.15" gradientTransform="translate(1993.36 6906.51) scale(5.83 -5.84)" xlink:href="#Degradado_sin_nombre_6"/>
+    <linearGradient id="Degradado_sin_nombre_8" data-name="Degradado sin nombre 8" x1="-356.17" y1="1154.62" x2="-356.67" y2="1155.48" gradientTransform="translate(3902.47 12618.62) scale(10.92 -10.92)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ababff"/>
+      <stop offset=".09" stop-color="#99f"/>
+      <stop offset=".3" stop-color="#77f"/>
+      <stop offset=".48" stop-color="#6161ff"/>
+      <stop offset=".59" stop-color="#5a5aff"/>
+      <stop offset=".66" stop-color="#5859f9"/>
+      <stop offset=".74" stop-color="#5258e9"/>
+      <stop offset=".84" stop-color="#4957ce"/>
+      <stop offset=".95" stop-color="#3d55a9"/>
+      <stop offset="1" stop-color="#365494"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_8-2" data-name="Degradado sin nombre 8" x1="-375.94" y1="1139.52" x2="-375.31" y2="1139.78" gradientTransform="translate(9990.68 43809.04) scale(26.56 -38.41)" xlink:href="#Degradado_sin_nombre_8"/>
+  </defs>
+  <g id="Mesa_de_trabajo_42" data-name="Mesa de trabajo 42">
+    <g id="Componentes_fijos" data-name="Componentes fijos">
+      <g id="Grupo_74" data-name="Grupo 74">
+        <g id="Grupo_68" data-name="Grupo 68">
+          <ellipse id="Elipse_9" data-name="Elipse 9" class="cls-6" cx="23.32" cy="52.1" rx="23.32" ry="2.92"/>
+          <ellipse id="Elipse_12" data-name="Elipse 12" class="cls-5" cx="56.94" cy="52.1" rx="11.13" ry="2.92"/>
+          <ellipse id="Elipse_13" data-name="Elipse 13" class="cls-4" cx="78.99" cy="52.1" rx="11.13" ry="2.92"/>
+        </g>
+        <g id="Grupo_73" data-name="Grupo 73">
+          <path id="Trazado_100" data-name="Trazado 100" class="cls-1" d="M67.75,13.39c-4.31,0-8.44,1.73-11.46,4.8-6.2-6.32-16.35-6.41-22.67-.21-3.03,2.97-4.75,7.03-4.8,11.27v6.7c0,1.94-.86,3.79-2.33,5.05h0c1.9-1.65,4.77-1.44,6.42,.45,1.65,1.9,1.44,4.77-.46,6.42h0c3.46-3,5.46-7.35,5.46-11.93v-6.7c.09-3.82,3.26-6.84,7.08-6.74,3.69,.09,6.65,3.06,6.74,6.74v18c0,2.51,2.04,4.55,4.55,4.55,2.51,0,4.55-2.04,4.55-4.55V29.25c.09-3.82,3.26-6.84,7.08-6.74,3.69,.09,6.65,3.06,6.74,6.74v18c0,2.51,2.04,4.55,4.55,4.55,2.51,0,4.55-2.04,4.55-4.55V29.25c-.05-8.8-7.21-15.89-16.01-15.86h.01Z"/>
+          <path id="Trazado_101" data-name="Trazado 101" class="cls-1" d="M56.28,51.8c-2.51,0-4.55-2.04-4.55-4.55V29.25c0-3.81-3.09-6.9-6.9-6.9s-6.9,3.09-6.9,6.9v6.7c0,4.58-2,8.93-5.46,11.93-1.9,1.65-4.77,1.44-6.42-.46-1.65-1.9-1.44-4.77,.46-6.42h0c1.47-1.27,2.32-3.11,2.32-5.05v-6.7c.1-8.84,7.35-15.93,16.19-15.83,8.7,.1,15.73,7.13,15.83,15.83v18c0,2.51-2.04,4.55-4.55,4.55h-.02Z"/>
+          <g id="Grupo_72" data-name="Grupo 72">
+            <path id="Trazado_102" data-name="Trazado 102" class="cls-2" d="M32.92,41.46c-1.65-1.9-4.52-2.1-6.42-.46h0c-1.88,1.68-2.04,4.56-.36,6.43,1.64,1.84,4.45,2.04,6.33,.45h0c1.9-1.65,2.1-4.52,.46-6.42h-.01Z"/>
+            <g id="Grupo_71" data-name="Grupo 71">
+              <path id="Trazado_106" data-name="Trazado 106" class="cls-1" d="M44.51,10.92c3.02,0,5.46-2.44,5.46-5.46S47.53,0,44.51,0c-3.02,0-5.46,2.44-5.46,5.46h0c0,3.01,2.45,5.46,5.46,5.46Z"/>
+              <path id="Trazado_107" data-name="Trazado 107" class="cls-7" d="M10.39,10.92c3.02,0,5.46-2.44,5.46-5.46C15.85,2.44,13.41,0,10.39,0c-3.02,0-5.46,2.44-5.46,5.46,0,3.01,2.45,5.46,5.46,5.46Z"/>
+              <path id="Trazado_108" data-name="Trazado 108" class="cls-3" d="M32.46,47.88c-1.92,1.62-4.8,1.38-6.42-.55-1.59-1.88-1.39-4.69,.45-6.33-1.27,1.1-2.9,1.7-4.58,1.7-3.77,.04-6.86-2.98-6.91-6.75V17.95c0-2.51-2.04-4.55-4.55-4.55s-4.55,2.04-4.55,4.55h0v18c.1,8.86,7.36,15.96,16.22,15.86,3.8-.04,7.47-1.44,10.34-3.93h0Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
