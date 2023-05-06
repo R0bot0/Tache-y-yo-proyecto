@@ -30,9 +30,9 @@ log.txt
 /bazel-out
 
 # Node
-Tache-y-yo-proyecto/node_modules/
-Tache-y-yo-proyecto/.angular/
-Tache-y-yo-proyecto/.vscode/
+simet/node_modules/
+simet/.angular/
+simet/.vscode/
 npm-debug.log
 yarn-error.log
 
