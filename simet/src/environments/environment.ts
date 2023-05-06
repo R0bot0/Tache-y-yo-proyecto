@@ -5,12 +5,6 @@
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:8080',
-  apiWeatherUrl: 'apiweather',
-  apiKeyWeather: 'g32bqtd86vuevsuakwzqwplxkayynltw',
-  apiSecretWeather: 'xfypm0hocmqjphsgwyocg1cswlsvmkao',
-  sunriseAndSunsetAPI: 'apisunrset',
-  googleMapsApiKey: 'AIzaSyD-PwMQM3byfbOWUszIxR7wANmaBGoa30w',
-  termAndConditionsUrl: 'https://simetstorage.blob.core.windows.net/frontend-document/CONVENIO DE AYUDA MUTUA- APELL- V3 DEF.pdf'
 };
 
 /*
