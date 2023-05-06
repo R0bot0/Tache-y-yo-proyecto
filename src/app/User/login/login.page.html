@@ -17,21 +17,27 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item class="logininput">
-            <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" [(ngModel)]="id" placeholder="Usuario o Correo electronico"></ion-input>
-          </ion-item>
+          <div>
+            <form (ngSubmit)="login()" #loginForm="ngForm">
+              <ion-item class="logininput">
+                <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" [(ngModel)]="id" placeholder="Usuario o Correo electronico"></ion-input>
+              </ion-item>
+              <ion-item class="logininput">
+                <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
+              </ion-item>
+              <ion-button expand="block" class="button" type="submit" [disabled]="!loginForm.valid">INGRESAR</ion-button>
+            </form>
+          </div>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item class="logininput">
-            <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
-          </ion-item>
+          
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" class="button" (click)="Login()">INGRESAR</ion-button>
+          
         </ion-col>
       </ion-row>
       <ion-row>

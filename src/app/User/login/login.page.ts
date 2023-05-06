@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -9,22 +12,27 @@ import { NavController } from '@ionic/angular';
 export class LoginPage implements OnInit {
   id!: string;
   password!: string;
-  constructor(private navCtrl: NavController) {}
+  constructor(private http: HttpClient, private router: Router ,private navCtrl: NavController) {}
 
   ngOnInit() {
   }
-  Login() {
-    // Handle login logic here
-    console.log('Username:', this.id);
-    console.log('Password:', this.password);
-    var ver= this.id==='admin';
-    var vir= this.password==='password';
+  
+  login() {
+    const body = {
+      id: this.id,
+      password: this.password
+    };
     
-    // Example login logic
-    if (this.id == 'admin' && this.password == 'password') {
-      console.log(ver, vir);
-      this.navCtrl.navigateForward('folder');
-    }
+    console.log(body)
+    // this.http.post(`${environment.apiUrl}/auth/login`, body).subscribe((response) => {
+    //   if (response) {
+    //     // User exists, navigate to home page
+    //     this.router.navigate(['folder/Documentos de interes']);
+    //   } else {
+    //     // Show error message
+    //     console.log("error del servidor");
+    //   }
+    // });
   }
 
 }
