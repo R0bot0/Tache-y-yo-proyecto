@@ -23,14 +23,13 @@ export class LoginPage implements OnInit {
       password: this.password
     };
     
-    this.http.post(`${environment.apiUrl}/auth`, body).subscribe((response) => {
+    this.http.post(`${environment.apiUrl}/auth/login`, body).subscribe((response) => {
       if (response) {
         // User exists, navigate to home page
         this.router.navigate(['folder/Documentos de interes']);
       } else {
         // Show error message
         console.log("error del servidor");
-        
       }
     });
   }
