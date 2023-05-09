@@ -28,6 +28,4 @@ export const routes: Routes = [
     path: 'inicio',
     loadComponent: () => import('./User/inicio/inicio.page').then( m => m.InicioPage)
   },
-
-
 ];
