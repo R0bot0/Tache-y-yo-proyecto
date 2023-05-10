@@ -11,7 +11,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class InicioPage implements OnInit {
-
+  currentDate: String = new Date().toLocaleString('es-ES', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
   constructor() { }
 
   ngOnInit() {
