@@ -1,0 +1,53 @@
+
+
+
+  <ion-content class="body" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #98ed94;">
+    <ion-grid class="container">
+      <ion-row size="12">
+        <ion-col>
+  
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-center">
+            <img class="logo" src="assets/simet.png" alt="logo" />
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <form (ngSubmit)="login()" #loginForm="ngForm">
+              <ion-item class="logininput">
+                <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" [(ngModel)]="id" placeholder="Usuario o Correo electronico"></ion-input>
+              </ion-item>
+              <ion-item class="logininput">
+                <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
+              </ion-item>
+              <ion-button expand="block" class="button" type="submit" [disabled]="!loginForm.valid">INGRESAR</ion-button>
+            </form>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="signup">
+          <h1 class="signup"><a class="link" routerLink="/restaurarcont">¿Olvidaste tus credenciales? </a></h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      <ion-toolbar class="abajo">
+        <ion-title style="font-size: small;" routerLink="">SOPORTE TECNICO</ion-title>
+      </ion-toolbar>
+  </ion-content>
+

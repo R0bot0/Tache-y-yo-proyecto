@@ -1,0 +1,125 @@
+<app-menu></app-menu>
+<div class="wholepage">
+  <ion-header>
+    <ion-toolbar class="headerpagina">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-col-header-menu">
+            <div>
+              <ion-buttons slot="start" >
+                <ion-menu-button class="a"></ion-menu-button>
+              </ion-buttons>
+            </div>
+          </ion-col>
+          <ion-col class="ion-col-header">
+            <div class="logo">
+              <a class="imagenlogo" [routerLink]="['/login']" slot="middle">
+                <img class="logo" src="assets\favicon.ico" alt="logo" />
+              </a>
+            </div>
+          </ion-col>
+          <ion-col class="ion-col-header-logout">
+            <a href="">In construction...</a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-header >
+    <ion-toolbar class="headerpagina">
+      <ion-title size="medium">{{folder}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div [ngSwitch]="options" id="the-page" class="wholepage">
+    <!-- -->
+    <div *ngSwitchCase="'Documentos de interes'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Normatividad vigente</ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Documentos del proceso APELL</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Lecciones aprendidas y buenas practicas</ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Consultar histórico de emergencias y alertas</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Documentos Técnicos</ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button class="botondoc" expand="block" fill="outline">Procedimientos operativos normalizados</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-searchbar animated="true" placeholder="Filtro de busqueda" class="sbfiltro">
+          </ion-searchbar>
+        </ion-row>
+      </ion-grid>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>Documentos</p>
+      <div id="no se">
+        <ion-grid class="ion-grid-bton">
+          <ion-row>
+            <ion-col></ion-col>
+            <ion-col class="nopadding">
+              <ion-button class="semicircle">Generar alerta</ion-button>
+            </ion-col>
+            <ion-col></ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <ion-toolbar class="headerpagina">
+        <ion-title size="medium">Emergencias</ion-title>
+      </ion-toolbar>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Mis escenarios'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>escenarios</p>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Ayuda Mutua'" class="page">
+      \
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>Ayuda</p>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Listado de sustancias'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>sustancias</p>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Mapa de emergencias'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>emergencias</p>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Gestión de recursos'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>recursos</p>
+    </div>
+    <!-- -->
+    <div *ngSwitchCase="'Contacto'" class="page">
+      <p id="current-date" class="right">{{currentDate}}</p>
+      <strong class="capitalize">{{folder}}</strong>
+      <p>Contacto</p>
+    </div>
+  </div>
+  
+</div>
