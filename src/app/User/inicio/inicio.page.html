@@ -1,32 +1,142 @@
-<ion-header>
-  <ion-toolbar class="headerpagina">
-    <ion-grid>
-      <ion-row>
-        <ion-col class="ion-col-header-menu">
-          <div>
-            <ion-buttons slot="start" >
-              <ion-menu-button class="a"></ion-menu-button>
-            </ion-buttons>
-          </div>
-        </ion-col>
-        <ion-col class="ion-col-header">
-          <div class="logo">
-            <a class="imagenlogo" slot="middle">
-              <img class="logo" src="assets\favicon.ico" alt="logo" />
-            </a>
-          </div>
-        </ion-col>
-        <ion-col class="ion-col-header-logout">
-          <a href="">In construction...</a>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-toolbar>
-  <div>
-    <p id="current-date" style="text-align:right;">{{currentDate}} </p>
-  </div>
-</ion-header>
 
 <ion-content class="page">
-
+  <!-- -->
+  <!--Toda esta parte es el header-->
+  <ion-header no-border>
+    <ion-toolbar class="headerpagina">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <!--Esto esta aqui para que el logo pueda estar en el medio -->
+          <ion-col class="ion-col-header-menu">
+            
+          </ion-col>
+          <ion-col class="ion-col-header">
+            <!--aqui esta el logo-->
+            <div class="logo">
+              <a class="imagenlogo" slot="middle">
+                <img class="logo" src="assets\favicon.ico" alt="logo" />
+              </a>
+            </div>
+          </ion-col>
+          <!--Aqui tiene que ir la campaniota -->
+          <ion-col >
+            <div class="divcampanita">
+              <img class="campanita" src="assets\ICONOS - ACTUALIZADOS\Notificacion ACTIVA.svg" alt="logo" />
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <!--aqui va la parte de la fecha-->
+  <ion-header>
+    <div class="divcampanita">
+      <p id="current-date" style="text-align:right;text-transform: capitalize; color: #3d3d6c; margin: 2%;"><strong>{{currentday}}</strong>, {{currentDate}} {{currentyear}}</p>
+    </div>
+  </ion-header>
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <!-- aqui va la imagen del usuario (Tache encargate de esto usando el .ts. Ahi deje algo comentado para fueras teniendo una idea)-->
+      <ion-col>
+        <div style="display: flex;
+        justify-content: center;">
+          <img id="logo" class="logoempresa" src="assets\ICONOS - ACTUALIZADOS\BOTON APELL.svg" />
+        </div>
+         
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="display: flex;
+      flex-direction: column;
+      align-items: center;">
+        <!--VOY A DEJAR UNOS NOMBRE GENERICOS AQUI PUESTOS CON UN CSS QUE LO DEJE BONITO, TU VAS A TENER QUE VER COMO SACAR LA INFORMACION DE LA ABSE DE DATOS-->
+        <!--TAMBIEN, POR SI NO SABES, PARA DECLARAR LO QUE HAGAS EN EL TS ES ASI: {{EL NOMBRE DE LA VARIABLE}} DE EJEMPLO ESTA LO QUE TENGO ARRIBAEN LA FECHA-->
+        <!-- Nombre del usuario-->
+        <a class="nombre">Jose Alfredo Rubio Lopez</a>
+        <!--Nombre de la empresa y posicion en ella -->
+        <div style="display: inline-block;">
+          <a class="nombreCargo"><a class="nombreEmpresa">Monomeros SAS -</a> &nbsp;Operador de Riesgos</a>
+          <!-- Linea de separacion-->
+          <hr class="Linea">
+        </div>
+        <!-- boton de cambio de contraseña -->
+        <ion-button fill="clear"class="botonCmbrContra">
+          Cambiar Contraseña
+          <ion-icon class="iconocont"slot="end" name="editar" src="assets\ICONOS - ACTUALIZADOS\Acción - Editar.svg" ></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <!--Boton de alerta -->
+        <div style="display: flex;
+        justify-content: center;">
+          <ion-button class="Alerta" shape="round"> 
+            <div>
+              <img width="15%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;"/> <br/>
+              <a style="color: #ececff; font-size: smaller;">Generar Alerta</a> 
+            </div>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <!--Ayuda mutua-->
+      <ion-col>
+        <div style="display: flex;
+        justify-content: center;">
+          <ion-button class="botonessecciones" shape="block" fill="clear"> 
+            <div>
+              <img width="50%" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - AYUDA MUTUA.svg"/> <br/>
+              <a style="color: #979797; font-size: smaller;">Ayuda Mutua</a> 
+            </div>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <!--Documentos de interes-->
+      <ion-col>
+        <div style="display: flex;
+        justify-content: center;">
+          <ion-button class="botonessecciones" shape="block" fill="clear"> 
+            <div>
+              <img width="50%" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - DOC.svg"/> <br/>
+              <a style="color: #979797; font-size: smaller;">Documentos<br> de Interés</a> 
+            </div>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <!--Listado de sustancias-->
+      <ion-col>
+        <div style="display: flex;
+        justify-content: center;">
+          <ion-button class="botonessecciones" shape="block" fill="clear"> 
+            <div>
+              <img width="60%" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - SUSTANCIAS.svg"/> <br/>
+              <a style="color: #979797; font-size: smaller;">Listado de<br> sustancias</a> 
+            </div>
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <!--Soporte tecnico-->
+      <ion-col>
+        <div style="display: flex;
+        justify-content: center;">
+        <a class="soportetecnico">SOPORTE TECNICO</a>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
+<!--Footer en el cual van las emergencias reportadas-->
+<ion-footer>
+  <ion-toolbar class="emergencias">
+    <ion-title style="color: #d5d4d4; text-align: center;"> emergencias</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -4,21 +4,112 @@
 .logo{
     display: flex;
     justify-content: center;
-    height: 70%;
+    height: 100%;
  }
- .headerpagina{
+ .logoempresa{
+  margin-top: 8%;
+  height: 20%;
+  width: 20%;
+ }
+ .divcampanita{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ }
+ .campanita{
+  height: 20%;
+  width: 20%;
+  align-self: end;
+  margin-right: 15%;
+ }
+.headerpagina{
     --border-width: 0 !important;
     --background: #98ed94;
     height: 40%;
-  }
-  .page{
+}
+.page{
     display: flex;
     flex-direction: column;
     height: auto;
     --background: #ffffff;
-  }
-  .imagenlogo{
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.imagenlogo{
     width: 70%;
     display: flex;
     justify-content: center;
-  }
+}
+.nombre{
+  color: #8d8d8d;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.nombreEmpresa{
+  color: #5555ff;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  font-weight: bold
+}
+
+.nombreCargo{
+  color: #9494ff;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+
+.Linea{
+  color: rgba(121, 119, 119, 0.05); /* Change color of line */
+  height: 2px; /* Change height of line */
+  width: 90%;
+  border: none; /* Remove border */
+  background-color: rgba(149, 147, 147, 0.378); /* Set background color of line */
+  margin-bottom: 1%;
+}
+
+.botonCmbrContra{
+  --color	: #c6f5c4;
+  text-transform: capitalize;
+  align-self: end;
+  margin: 0%;
+  height: 90%;
+  font-style: italic;
+}
+.iconocont{
+  color: #c6f5c4;
+}
+.Alerta{
+  --background: #5a5aff;
+  width: 70%; 
+  height: 4rem; 
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: Arial, sans-serif;
+  text-transform: none;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.botonessecciones{
+  height: auto;
+  width: 25%;
+  text-transform: none;
+  margin-bottom: 2%;
+}
+.soportetecnico{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.emergencias{
+  --background: #f2f2f2;
+  --border-color: #f2f2f2;
+  --text-color: #d5d4d4;
+}
