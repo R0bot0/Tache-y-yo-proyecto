@@ -1,13 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>restaurarcont</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">restaurarcont</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="body" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #98ed94;">
+  <ion-grid class="container">
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-col-header-menu">
+        <!--Texto de guia-->
+        <ion-label class="titulo" style="color: #ffffff; margin-bottom: 0.7rem;">¿Olvidaste tu contraseña?</ion-label>
+        <ion-label class="subtitulo" style="color: #ffffff7d; margin-bottom: 0.5rem;">Te damos las siguientes opciones para restaurar</ion-label>
+        <div>
+          <!--Espacios de informacion-->
+          <form (ngSubmit)="mandarnotif()" #loginForm="ngForm" style="display: flex;
+          flex-direction: column;">
+          <!--vieja-->
+            <!--Boton para confirmar-->
+            <ion-button class="correo" shape="round" type="submit" [disabled]="!loginForm.valid">
+              Enviar link al correo
+              <ion-icon slot="end" name="checkmark-circle-outline"></ion-icon>
+            </ion-button>
+            <ion-button class="SMS" fill="outline" shape="round" type="submit" [disabled]="!loginForm.valid">
+              Autenticacion por SMS
+              <ion-icon slot="end" name="checkmark-circle-outline"></ion-icon>
+            </ion-button>
+          </form>
+            <ion-label [routerLink]="['/login']" class="subtitulo" style="color: #ffffff7d; margin-bottom: 0.5rem;">
+              Cancelar
+            </ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
