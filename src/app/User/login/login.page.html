@@ -23,21 +23,11 @@
                 <ion-input label="Usuario o Correo electronico" label-placement="floating" type="email" [(ngModel)]="id" placeholder="Usuario o Correo electronico"></ion-input>
               </ion-item>
               <ion-item class="logininput">
-                <ion-input height="50%" label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
+                <ion-input label="Contraseña" label-placement="floating" type="password" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
               </ion-item>
               <ion-button [routerLink]="['/inicio']" expand="block" class="button" type="submit" [disabled]="!loginForm.valid">INGRESAR</ion-button>
             </form>
           </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          
         </ion-col>
       </ion-row>
       <ion-row>
@@ -46,8 +36,11 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-      <ion-toolbar class="abajo">
-        <ion-title style="font-size: small;" routerLink="">SOPORTE TECNICO</ion-title>
-      </ion-toolbar>
+      
   </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="abajo">
+    <ion-title style="font-size: small;" routerLink="">SOPORTE TECNICO</ion-title>
+  </ion-toolbar>
+</ion-footer>
 
