@@ -2,7 +2,7 @@
 <ion-content class="page">
   <!-- -->
   <!--Toda esta parte es el header-->
-  <ion-header no-border>
+  <ion-header class="ion-no-border">
     <ion-toolbar class="headerpagina">
       <ion-grid>
         <ion-row class="ion-align-items-center">
@@ -29,7 +29,7 @@
     </ion-toolbar>
   </ion-header>
   <!--aqui va la parte de la fecha-->
-  <ion-header>
+  <ion-header >
     <div class="divcampanita">
       <p id="current-date" style="text-align:right;text-transform: capitalize; color: #3d3d6c; margin: 2%;"><strong>{{currentday}}</strong>, {{currentDate}} {{currentyear}}</p>
     </div>
@@ -60,7 +60,7 @@
           <hr class="Linea">
         </div>
         <!-- boton de cambio de contraseña -->
-        <ion-button fill="clear"class="botonCmbrContra">
+        <ion-button fill="clear"class="botonCmbrContra" [routerLink]="['/cambiarcont']">
           Cambiar Contraseña
           <ion-icon class="iconocont"slot="end" name="editar" src="assets\ICONOS - ACTUALIZADOS\Acción - Editar.svg" ></ion-icon>
         </ion-button>
