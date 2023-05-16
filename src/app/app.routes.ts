@@ -22,10 +22,15 @@ export const routes: Routes = [
   },
   {
     path: 'restaurarcont',
-    loadComponent: () => import('./User/restaurarcont/restaurarcont.page').then( m => m.RestaurarcontPage)
+    loadComponent: () => import('./User/Restaurar/restaurarcont/restaurarcont.page').then( m => m.RestaurarcontPage)
   },
   {
     path: 'inicio',
     loadComponent: () => import('./User/inicio/inicio.page').then( m => m.InicioPage)
   },
+  {
+    path: 'cambiarcont',
+    loadComponent: () => import('./User/cambiarcont/cambiarcont.page').then( m => m.CambiarcontPage)
+  },
+
 ];
