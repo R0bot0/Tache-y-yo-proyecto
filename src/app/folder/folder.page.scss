@@ -9,6 +9,17 @@
   justify-content: center;
   align-items: center;
 }
+.divcampanita{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.campanita{
+height: 20%;
+width: 20%;
+align-self: end;
+margin-right: 15%;
+}
 .ion-col-header-menu{
   display: flex;
   justify-content: left;
@@ -38,7 +49,14 @@
   height: 100%;
   background-color: #ffffff;
 }
-
+.nombredeseccion{
+  display: flex;
+  justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #eeeeff;
+    margin: 1rem;
+}
 .a{
   color: white;
 }
@@ -87,7 +105,7 @@
 
 ion-button.semicircle {
   --border-radius: 50px 50px 0 0;
-  width: 100px; 
+  width: 120px; 
   height: 60px; 
   position: relative;
   text-align: center;

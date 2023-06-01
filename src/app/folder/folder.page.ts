@@ -16,8 +16,9 @@ export class FolderPage implements OnInit {
   public folder!: string;
   public options!: string;
   private activatedRoute = inject(ActivatedRoute);
-  
-  currentDate: String = new Date().toLocaleString('es-ES', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  currentday: String = new Date().toLocaleString('es-ES', {weekday: 'long'});
+  currentDate: String = new Date().toLocaleString('es-ES', {day: 'numeric', month: 'long'});
+  currentyear: String = new Date().toLocaleString('es-ES', {year: 'numeric' });
   constructor() {}
   search(event: any) {
     // Add search functionality here

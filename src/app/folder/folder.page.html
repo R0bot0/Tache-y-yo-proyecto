@@ -1,12 +1,11 @@
-<app-menu></app-menu>
 <div class="wholepage">
-  <ion-header>
+  <ion-header class="ion-no-border">
     <ion-toolbar class="headerpagina">
       <ion-grid>
         <ion-row>
           <ion-col class="ion-col-header-menu">
             <div>
-              <ion-buttons slot="start" >
+              <ion-buttons slot="start">
                 <ion-menu-button class="a"></ion-menu-button>
               </ion-buttons>
             </div>
@@ -19,24 +18,37 @@
             </div>
           </ion-col>
           <ion-col class="ion-col-header-logout">
-            <a href="">In construction...</a>
+            <div class="divcampanita">
+              <img class="campanita" src="assets\ICONOS - ACTUALIZADOS\Notificacion ACTIVA.svg" alt="logo" />
+            </div>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-toolbar>
   </ion-header>
-  
-  <ion-header >
-    <ion-toolbar class="headerpagina">
-      <ion-title size="medium">{{folder}}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
+  <app-menu>
+  </app-menu>
   <div [ngSwitch]="options" id="the-page" class="wholepage">
+    
+    <ion-header class="ion-no-border" style="border-bottom: 1px solid rgba(0, 0, 0, 0.083);  box-shadow: none; background-color: #ffffff;">
+      <div class="divcampanita">
+        <p id="current-date" style="text-align:right;text-transform: capitalize; color: #3d3d6c; margin: 2%;">
+          <strong>{{currentday}}</strong>, {{currentDate}} {{currentyear}}
+        </p>
+      </div>
+    </ion-header>
+    
+    
+    
     <!-- -->
     <div *ngSwitchCase="'Documentos de interes'" class="page">
-      <p id="current-date" class="right">{{currentDate}}</p>
       <ion-grid>
+        <ion-row>
+          <ion-col class="nombredeseccion">
+            <img width="30rem" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - DOC.svg"/>
+            <ion-text style="color: #7676ff">Documentos de interes</ion-text>
+          </ion-col>
+        </ion-row>
         <ion-row>
           <ion-col size="6">
             <ion-button class="botondoc" expand="block" fill="outline">Normatividad vigente</ion-button>
@@ -47,10 +59,12 @@
         </ion-row>
         <ion-row>
           <ion-col size="6">
-            <ion-button class="botondoc" expand="block" fill="outline">Lecciones aprendidas y buenas practicas</ion-button>
+            <ion-button class="botondoc" expand="block" fill="outline">Lecciones aprendidas y buenas
+              practicas</ion-button>
           </ion-col>
           <ion-col size="6">
-            <ion-button class="botondoc" expand="block" fill="outline">Consultar histórico de emergencias y alertas</ion-button>
+            <ion-button class="botondoc" expand="block" fill="outline">Consultar histórico de emergencias y
+              alertas</ion-button>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -58,7 +72,8 @@
             <ion-button class="botondoc" expand="block" fill="outline">Documentos Técnicos</ion-button>
           </ion-col>
           <ion-col size="6">
-            <ion-button class="botondoc" expand="block" fill="outline">Procedimientos operativos normalizados</ion-button>
+            <ion-button class="botondoc" expand="block" fill="outline">Procedimientos operativos
+              normalizados</ion-button>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -73,7 +88,10 @@
           <ion-row>
             <ion-col></ion-col>
             <ion-col class="nopadding">
-              <ion-button class="semicircle">Generar alerta</ion-button>
+              <ion-button class="semicircle"><div>
+                <img width="50%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;"/> <br/>
+                <a style="color: #ececff; font-size: smaller;">Generar Alerta</a> 
+              </div></ion-button>
             </ion-col>
             <ion-col></ion-col>
           </ion-row>
@@ -102,24 +120,24 @@
       <strong class="capitalize">{{folder}}</strong>
       <p>sustancias</p>
     </div>
-    <!-- -->
+    <!--
     <div *ngSwitchCase="'Mapa de emergencias'" class="page">
       <p id="current-date" class="right">{{currentDate}}</p>
       <strong class="capitalize">{{folder}}</strong>
       <p>emergencias</p>
     </div>
-    <!-- -->
+    
     <div *ngSwitchCase="'Gestión de recursos'" class="page">
       <p id="current-date" class="right">{{currentDate}}</p>
       <strong class="capitalize">{{folder}}</strong>
       <p>recursos</p>
     </div>
-    <!-- -->
+   
     <div *ngSwitchCase="'Contacto'" class="page">
       <p id="current-date" class="right">{{currentDate}}</p>
       <strong class="capitalize">{{folder}}</strong>
       <p>Contacto</p>
-    </div>
+    </div>-->
   </div>
-  
+
 </div>
