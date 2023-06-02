@@ -29,23 +29,24 @@
   <app-menu>
   </app-menu>
   <div [ngSwitch]="options" id="the-page" class="wholepage">
-    
-    <ion-header class="ion-no-border" style="border-bottom: 1px solid rgba(0, 0, 0, 0.083);  box-shadow: none; background-color: #ffffff;">
+
+    <ion-header class="ion-no-border"
+      style="border-bottom: 1px solid rgba(0, 0, 0, 0.083);  box-shadow: none; background-color: #ffffff;">
       <div class="divcampanita">
         <p id="current-date" style="text-align:right;text-transform: capitalize; color: #3d3d6c; margin: 2%;">
           <strong>{{currentday}}</strong>, {{currentDate}} {{currentyear}}
         </p>
       </div>
     </ion-header>
-    
-    
-    
+
+
+
     <!-- -->
     <div *ngSwitchCase="'Documentos de interes'" class="page">
       <ion-grid>
         <ion-row>
           <ion-col class="nombredeseccion">
-            <img width="30rem" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - DOC.svg"/>
+            <img width="30rem" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - DOC.svg" />
             <ion-text style="color: #7676ff">Documentos de interes</ion-text>
           </ion-col>
         </ion-row>
@@ -88,10 +89,13 @@
           <ion-row>
             <ion-col></ion-col>
             <ion-col class="nopadding">
-              <ion-button class="semicircle"><div>
-                <img width="50%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;"/> <br/>
-                <a style="color: #ececff; font-size: smaller;">Generar Alerta</a> 
-              </div></ion-button>
+              <ion-button class="semicircle">
+                <div>
+                  <img width="50%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;" />
+                  <br />
+                  <a style="color: #ececff; font-size: smaller;">Generar Alerta</a>
+                </div>
+              </ion-button>
             </ion-col>
             <ion-col></ion-col>
           </ion-row>
@@ -109,18 +113,148 @@
     </div>
     <!-- -->
     <div *ngSwitchCase="'Ayuda Mutua'" class="page">
-      \
-      <p id="current-date" class="right">{{currentDate}}</p>
-      <strong class="capitalize">{{folder}}</strong>
-      <p>Ayuda</p>
-    </div>
-    <!-- -->
-    <div *ngSwitchCase="'Listado de sustancias'" class="page">
-      <p id="current-date" class="right">{{currentDate}}</p>
-      <strong class="capitalize">{{folder}}</strong>
-      <p>sustancias</p>
-    </div>
-    <!--
+      <ion-grid style="margin: 0px;">
+        <ion-row>
+          <ion-col style="background-color: #c7edc5;" class="nombredeseccion">
+            <img style="margin-left: 10px;" width="30rem"
+              src="assets\ICONOS - ACTUALIZADOS\Icono Menu - AYUDA MUTUA Verde.svg" />
+            <ion-text style="color: #9de099; margin-right: 10px;">Ayuda <b>Mutua</b></ion-text>
+          </ion-col>
+        </ion-row>
+        <!--Mapa-->
+        <ion-row>
+          <ion-col>
+
+          </ion-col>
+        </ion-row>
+        <!--Boton de alerta-->
+        <ion-row class="ion-align-items-center">
+          <ion-col>
+            <div style="display: flex;
+        justify-content: center;">
+              <ion-button style=" --background: #5a5aff;
+        width: 50%; 
+        height: 3rem; 
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+        font-family: Arial, sans-serif;
+        text-transform: none;
+        word-wrap: break-word;
+        white-space: normal;
+        margin-top: 6%;
+        margin-bottom: 6%;" shape="round">
+                <div>
+                  <img width="15%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;" />
+                  <br />
+                  <a style="color: #ececff; font-size: smaller;">Generar Alerta</a>
+                </div>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!--Gestion de recursos-->
+        <ion-row>
+          <ion-col>
+            <div style="display: flex;
+        justify-content: center; height: 4rem;">
+              <ion-button  fill="outline" style=" --background: #5a5aff00;
+              --border-width: 1px;
+              --border-color: #96969688;
+              width: 14rem; 
+              height: 3rem; 
+              align-items: center;
+              position: relative;
+              text-align: center;
+              margin-bottom: 0;
+              font-family: Arial, sans-serif;
+              text-transform: none;
+              word-wrap: break-word;
+              white-space: normal;
+              margin-top: 6%;
+              margin-bottom: 6%;" shape="round">
+                <div style="display: flex;
+                align-items: center;
+                justify-content: flex-start;">
+                  <img width="20%" src="assets\ICONOS - ACTUALIZADOS\Icono - Recursos.svg" style="margin-right: 2%;" />
+                  <br />
+                  <a style="color: #5a5aff; font-size: smaller;">Gestion de recursos</a>
+                </div>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!--Directorios especializados-->
+        <ion-row>
+          <ion-col>
+            <div style="display: flex;
+        justify-content: center; height: 4rem;">
+              <ion-button  fill="outline" style=" --background: #5a5aff00;
+              --border-width: 1px;
+              --border-color: #96969688;
+              width: 14rem; 
+              height: 3rem; 
+              align-items: center;
+              position: relative;
+              text-align: center;
+              margin-bottom: 0;
+              font-family: Arial, sans-serif;
+              text-transform: none;
+              word-wrap: break-word;
+              white-space: normal;
+              margin-top: 6%;
+              margin-bottom: 6%;" shape="round">
+                <div style="display: flex;
+                align-items: center;
+                justify-content: flex-start;">
+                  <img width="30%" src="assets\ICONOS - ACTUALIZADOS\Icono Menu - Directorios especializados.svg" style="margin-right: -20%;position: relative;
+                  right: 0.5rem;" />
+                  <br />
+                  <a style="color: #5a5aff; font-size: smaller;">Directorios especializados</a>
+                </div>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!--Seguimiento de alertas-->
+        <ion-row>
+          <ion-col>
+            <div style="display: flex;
+        justify-content: center; height: 4rem;">
+              <ion-button  fill="outline" style=" --background: #5a5aff00;
+              --border-width: 1px;
+              --border-color: #96969688;
+              width: 14rem; 
+              height: 3rem; 
+              align-items: center;
+              position: relative;
+              text-align: center;
+              margin-bottom: 0;
+              font-family: Arial, sans-serif;
+              text-transform: none;
+              word-wrap: break-word;
+              white-space: normal;
+              margin-top: 6%;
+              margin-bottom: 6%;" shape="round">
+                <div style="display: flex;
+                align-items: center;
+                justify-content: flex-start;">
+                  <img width="15%" src="assets\ICONOS - ACTUALIZADOS\Icono - Alerta.svg" style="margin-bottom: 2%;" />
+                  <br />
+                  <a style="color: #5a5aff; font-size: smaller;">Seguimiento de Alertas</a>
+                </div>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <!-- -->
+      <div *ngSwitchCase="'Listado de sustancias'" class="page">
+        <p id="current-date" class="right">{{currentDate}}</p>
+        <strong class="capitalize">{{folder}}</strong>
+        <p>sustancias</p>
+      </div>
+      <!--
     <div *ngSwitchCase="'Mapa de emergencias'" class="page">
       <p id="current-date" class="right">{{currentDate}}</p>
       <strong class="capitalize">{{folder}}</strong>
@@ -138,6 +272,6 @@
       <strong class="capitalize">{{folder}}</strong>
       <p>Contacto</p>
     </div>-->
-  </div>
+    </div>
 
-</div>
+  </div>
