@@ -1,0 +1,39 @@
+<!-- -->
+<!--Hechar para atras-->
+<ion-header class="ion-no-border" style="background-color: #98ed94; ">
+  <ion-toolbar style="--ion-toolbar-background: #98ed94; ">
+    <a [routerLink]="['/inicio']">
+      <ion-icon class="atras" style="color: #ffffff; " size="large" name="arrow-back-outline" ></ion-icon>
+    </a>    
+  </ion-toolbar>
+</ion-header>
+<ion-content class="body" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #98ed94;">
+  <ion-grid class="container">
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-col-header-menu">
+        <ion-label class="titulo" style="color: #4cc847; margin-bottom: 0.7rem;">Cambio de contraseña</ion-label>
+        <div>
+          <!--Espacios de informacion-->
+          <form (ngSubmit)="neuvacont()" #loginForm="ngForm" style="display: flex;
+          flex-direction: column;">
+          <!--vieja-->
+            <ion-item class="input" lines="none">
+              <ion-input label="Escribe tu contraseña actual" label-placement="floating" type="password" [(ngModel)]="oldpassword" placeholder="Vieja contraseña"></ion-input>
+            </ion-item>
+            <ion-label class="titulo" style="margin-top: 2rem; margin-bottom: 0.5rem;">Nueva contraseña:</ion-label>
+            <!--Nueva-->
+            <ion-item class="input" size="small" lines="none">
+              <ion-input label="Escribe tu nueva contraseña" label-placement="floating" type="password" [(ngModel)]="newpassword" placeholder="Nueva Contraseña"></ion-input>
+            </ion-item>
+            <!--Repetir-->
+            <ion-item class="input" lines="none">
+              <ion-input label="Repite tu nueva contraseña" label-placement="floating" type="password" [(ngModel)]="repeatpassword" placeholder="Repite"></ion-input>
+            </ion-item>
+            <!--Boton para confirmar-->
+            <ion-button class="button" type="submit" [disabled]="!loginForm.valid">Confirmar</ion-button>
+          </form>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

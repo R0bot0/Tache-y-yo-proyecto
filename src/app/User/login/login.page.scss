@@ -3,7 +3,6 @@
   justify-content: center;
  
 }
-
 .binicio {
   width: 50%;
 }
@@ -19,10 +18,6 @@
 }
 .button {
   --background: #365494;
-}
-
-.signup{
-  font-size: medium;
 }
 
 .ion-label{
@@ -49,15 +44,17 @@
   color:#7293d6;
 }
 
-.signup{
+.restaurar{
+  font-size: medium;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.inner-scroll.scroll-y{
-  display: flex !important;
-    align-content: center;
-    justify-content: center;
-}
 
+
+.abajo{
+  text-align: center;
+  --background: #98ed94;
+  border-color: #98ed94;
+}
